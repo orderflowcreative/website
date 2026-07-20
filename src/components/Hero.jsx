@@ -15,18 +15,18 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">lohit</span>
+            Hi, Welcome to <span className="text-[#915EFF]">OrderFlow Creative</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I do
+            We provide
             <Typewriter
               options={{
-                strings: ["CyberSecurity", "Ai & ML", "NLP"],
+                strings: ["Video Editing", "Growth & Profit", "Precision & Strategy", "Fast & Impactful"],
                 autoStart: true,
                 loop: true,
                 loopCount: Infinity,
                 deleteSpeed: "natural",
-                pauseFor: 1000,
+                pauseFor: 500,
               }}
             />
           </p>
