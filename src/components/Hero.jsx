@@ -9,24 +9,25 @@ const Hero = () => {
     <section className="relative w-full h-screen mx-auto">
       <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-5 h-5 rounded-full bg-[#93b91f]" />
+          <div className="w-1 sm:h-80 h-40 green-gradient" />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, Welcome to <span className="text-[#915EFF]">OrderFlow Creative</span>
+            <span className="text-[#93b91f]">OrderFlow</span> Creative
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            We provide
+            
             <Typewriter
               options={{
                 strings: ["Video Editing", "Growth & Profit", "Precision & Strategy", "Fast & Impactful"],
                 autoStart: true,
                 loop: true,
                 loopCount: Infinity,
-                deleteSpeed: "natural",
-                pauseFor: 500,
+                deleteSpeed: 0,
+                delay: 30,
+                pauseFor: 1500,
               }}
             />
           </p>

@@ -24,7 +24,11 @@
   background: -webkit-linear-gradient(to right, #434343, #000000);
   background: linear-gradient(to right, #434343, #000000);
 }
-
+.green-gradient {
+  background: #93b91f;
+  background: linear-gradient(-90deg, #93b91f 0%, rgba(147, 185, 31, 0) 100%);
+  background: -webkit-linear-gradient(-90deg, #93b91f 0%, rgba(147, 185, 31, 0) 100%);
+}
 .violet-gradient {
   background: #804dee;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -141,4 +145,13 @@
 
 .confirmation {
   color: #00ff00;
+}
+.bg-primary{
+  background-color: #020f07;
+}
+.bg-tertiary{
+  background-color: #10301480;
+}
+.text-secondary{
+  color:#829749;
 }
