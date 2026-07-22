@@ -48,54 +48,57 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setEmailError("");
-    setNameError("");
-    setConfirmation("");
+  e.preventDefault();
+  setEmailError("");
+  setNameError("");
+  setConfirmation("");
 
-    if (!validateEmail(form.email)) {
-      setEmailError("Please enter a valid email address.");
-      return;
-    }
+  if (!validateEmail(form.email)) {
+    setEmailError("Please enter a valid email address.");
+    return;
+  }
 
-    if (!form.name.trim()) {
-      setNameError("Name is required.");
-      return;
-    }
+  if (!form.name.trim()) {
+    setNameError("Name is required.");
+    return;
+  }
 
-    setLoading(true);
+  setLoading(true);
 
-    emailjs
-      .send(
-        "service_r2i0by4",
-        "template_mf5x3bh",
-        {
-          from_name: form.name,
-          to_name: "Lohit Kolluri",
-          from_email: form.email,
-          to_email: "lohitkolluri@gmail.com",
-          message: form.message,
-        },
-        "p-gXzzyvEhPaJ0XA-"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          setConfirmation("Thank you! I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        }
-      )
-      .catch((error) => {
+  emailjs
+    .send(
+      "service_falh1pg",
+      "template_h1lbtkd",
+      {
+        // These names MUST match your EmailJS template variables exactly
+        name: form.name,        // Check your template for {{name}} or similar
+        email: form.email,      // Check your template for {{email}} or similar
+        message: form.message,  // Check your template for {{message}} or similar
+        // Optional: Include these if your template uses them
+        from_name: form.name,
+        from_email: form.email,
+        to_name: "OrderFlow Creatives",
+        to_email: "orderflowcreatives@gmail.com",
+      },
+      "kwyKtiv86TFuLFVDH"
+    )
+    .then(
+      () => {
         setLoading(false);
-        console.error(error);
-        setConfirmation("Something went wrong. Please try again. :/");
-      });
-  };
+        setConfirmation("Thank you! I will get back to you as soon as possible.");
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      }
+    )
+    .catch((error) => {
+      setLoading(false);
+      console.error(error);
+      setConfirmation("Something went wrong. Please try again. :/");
+    });
+};
 
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
