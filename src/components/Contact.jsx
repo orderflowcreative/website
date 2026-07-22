@@ -77,7 +77,7 @@ const Contact = () => {
         // Optional: Include these if your template uses them
         from_name: form.name,
         from_email: form.email,
-        to_name: "OrderFlow Creatives",
+        to_name: form.name,
         to_email: "orderflowcreatives@gmail.com",
       },
       "kwyKtiv86TFuLFVDH"
@@ -85,7 +85,7 @@ const Contact = () => {
     .then(
       () => {
         setLoading(false);
-        setConfirmation("Thank you! I will get back to you as soon as possible.");
+        setConfirmation("Thank you! Someone will get back to you as soon as possible.");
         setForm({
           name: "",
           email: "",
