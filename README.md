@@ -1,6 +1,6 @@
 <div align="center">
 
-![Banner]([[https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Portfolio%20Website%20V2&fontSize=80&animation=fadeIn&fontAlignY=35](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=OrderFlow%20Creatives&reversal=true&section=header&textBg=false)](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=OrderFlow%20Creatives&reversal=false&section=header&textBg=false))
+![Banner](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&text=OrderFlow%20Creatives&reversal=false&section=header&textBg=false)
 
 <p align="center">
   <a href="#features">Features</a> •
