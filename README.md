@@ -95,7 +95,7 @@ mindmap
 
 <div align="center">
 
-Developed by © [Franclin James Lim](LICENSE)
+Developed by © [Franclin James Lim](https://www.facebook.com/singlePrecisionFloatingPoint/)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/>
 
