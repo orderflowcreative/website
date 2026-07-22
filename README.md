@@ -95,7 +95,7 @@ mindmap
 
 <div align="center">
 
-MIT License © [Lohit Kolluri](LICENSE)
+Developed by © [Franclin James Lim](LICENSE)
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/>
 
